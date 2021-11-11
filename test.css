@@ -1,0 +1,30 @@
+
+article{ 
+    width: 1045px; 
+    padding: 80px;
+    box-sizing:border-box;
+    background-color: rgb(228, 225, 225);
+    text-align: center;}
+/*article > hr{width: 100px;}*/
+article > h2{font-size: 36px;}
+article > h2::after{
+    content:'';
+    width: 100px;
+    display: block;
+    border-bottom: 1px solid black;
+    margin: 30px auto;
+}
+article > p{font-size: 16px;}
+article > div{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+article > div > p {
+    width: 288px; height: 399px; 
+    overflow: hidden;
+cursor: pointer;}
+/*cursor:pointer는 커서를 가져다 댔을 때 손바닥 모양으로 만듬
+이미지를 누르기전 손바닥을 뜨게 해서 링크가 걸린걸 알게 하자*/
+article > div > p > img{width: 100%; transition:.5s;}
+article > div > p:hover > img{width: 120%;}
